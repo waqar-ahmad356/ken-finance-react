@@ -3,7 +3,7 @@ import kena_globe from '../assets/kena-globe.png'
 
 const Hero = () => {
   return (
-    <section className='bg-hero min-h-[100vh] bg-center bg-no-repeat bg-[length:100%_100%] '>
+    <section className=' min-h-[100vh] bg-center bg-no-repeat bg-[length:100%_100%] ' style={{backgroundImage:'url(/Hero.jpg)'}}>
     <div className='container'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-1 md:gap-4  min-h-[100vh] pt-[120px] '>
             <div className='flex flex-col md:items-start items-center  gap-1  md:gap-4 '>
