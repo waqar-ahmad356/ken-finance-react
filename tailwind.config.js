@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'hero': "url('/hero.png')",
+        'hero': "url('/public/hero.jpg')",
       },
       fontFamily:{
         'lato': ['Lato', 'sans-serif'],
