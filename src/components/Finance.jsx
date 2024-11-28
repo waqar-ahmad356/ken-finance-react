@@ -6,7 +6,7 @@ const Finance = () => {
   return (
     <section className='bg-white pt-[40px] md:pt-[80px] lg:pt-[192px]'>
     <div className='container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-[60px] lg:px-[100px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-[60px]'>
         <div className='flex flex-col items-start gap-[40px]'>
             <div className='flex flex-col items-start gap-[27px]'>
                 <h2 className='text-[40px] text-[#212326] font-bold capitalize leading-[52px] '>Explore endless possibilities with<br/> <span className=' bg-clip-text text-transparent bg-[linear-gradient(99deg,_#DB0011_10.8%,_#FF6F00_37.8%,_#DB0011_75.86%)] '> Kena Finance</span></h2>
