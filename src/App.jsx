@@ -8,6 +8,8 @@ import Crypto_Blockchain from './components/Crypto_Blockchain'
 import Security from './components/Security'
 import Footer from './components/Footer'
 import Ecosystem from './components/Ecosystem'
+import Kena_App from './components/Kena_App'
+import Wait_List from './components/Wait_List'
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
     <Buy_Sell/>
     <Crypto_Blockchain/>
     <Security/>
+    <Wait_List/>
+    <Kena_App/>
     <Ecosystem/>
     <Footer/>
       

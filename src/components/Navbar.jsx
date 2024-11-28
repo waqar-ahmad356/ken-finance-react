@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <div className='container'>
-    <header className={`flex justify-between items-center bg-[#fff] fixed ${isScrolled?'top-[6px]':'top-[16px]'} ${isScrolled?'lg:top-[8px]':'lg:top-[16px]'}   ${isScrolled?'lg:top-[8px]':'lg:top-[32px]'}  z-[999] rounded-[32px] transition-[top] duration-1000 ease-in-out  max-w-[1270px] w-full p-[8px] sm:p-[12px] md:p-[16px]  left-[50%] -translate-x-1/2` }>
+    <header className={`flex justify-between items-center bg-[#fff] fixed ${isScrolled?'top-[6px]':'top-[16px]'} ${isScrolled?'lg:top-[8px]':'lg:top-[16px]'}   ${isScrolled?'lg:top-[8px]':'lg:top-[32px]'}  z-[999] rounded-[32px] transition-[top] duration-1000 ease-in-out md:max-w-[800px]  xl:max-w-[1270px]  w-full p-[8px] sm:p-[12px] md:p-[16px]  left-[50%] -translate-x-1/2` }>
       
         
           <img src={logo} className='max-w-[100%] h-auto w-[100px] lg:w-[230px]' width="230" height="48" alt="logo" />
