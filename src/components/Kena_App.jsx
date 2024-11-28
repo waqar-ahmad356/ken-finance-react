@@ -5,7 +5,7 @@ const Kena_App = () => {
   return (
     <section className='mt-[80px] md:mt-[80px] lg:mt-[120px] xl:mt-[192px] bg-white'>
     <div className='container'>
-        <div className='flex flex-col items-center md:flex-row md:gap-[256px] gap-8'>
+        <div className='flex flex-col items-center md:flex-row md:gap-[120px] lg:gap-[256px] gap-8'>
             <div className='flex flex-col items-start md:gap-[32px] gap-4 lg:pl-[90px]'>
             <p className='text-[32px] text-[#db0011] font-semibold'>Step 1</p>
                 <h2 className='md:text-[64px] text-[40px]  text-[#000] font-normal'>Download App</h2>
