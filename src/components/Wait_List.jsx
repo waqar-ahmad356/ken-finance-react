@@ -36,8 +36,8 @@ const Wait_List = () => {
             <div className='flex flex-col gap-8 w-full'>
               <div className='flex md:flex-row flex-col gap-8 w-full'>
               
-                <input type='text' name="username" value={inputs.username || " "} onChange={onchange} className='w-full rounded-2xl border-[0.5px] outline-none px-3 py-[10px]' placeholder='Name' />
-                <select id='cars' value={option} onChange={(e)=>setOption(e.target.value)} className='w-full text-[#bbbbbb]  rounded-2xl border-[0.5px] outline-none px-3 py-[10px]' name='cars'>
+                <input type='text' name="username" value={inputs.username || " "} onChange={onchange} className='w-full rounded-2xl border-[0.5px] outline-none  px-3 py-[10px] placeholder:text-[#bbbbbb]' placeholder='Name' />
+                <select id='cars' value={option} onChange={(e)=>setOption(e.target.value)} className='w-full text-[#212121]  rounded-2xl border-[0.5px] outline-none px-3 py-[10px]' >
                   
                   <option value='Pk' >
                     Pakistan
@@ -52,7 +52,7 @@ const Wait_List = () => {
 
               </div>
               <div className='w-full '>
-                <input type='email' name='email' value={inputs.email || " "} onChange={onchange } className='w-full outline-none rounded-2xl border-[0.5px] px-3 py-[10px]' placeholder='Type email address' />
+                <input type='email' name='email' value={inputs.email || " "} onChange={onchange } className='w-full text-[#212121] placeholder:text-[#bbbbbb] outline-none rounded-2xl border-[0.5px] px-3 py-[10px]' placeholder='Type Email address' />
               </div>
             </div>
             <button type='submit' className='px-[32px] mt-[48px] py-[14px] bg-[#dd0011] text-white rounded-2xl'>
