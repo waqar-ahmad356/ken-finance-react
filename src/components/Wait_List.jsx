@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import chat from '../assets/chat.png'
 
 const Wait_List = () => {
+  const [inputs,setInputs]=useState({})
+  const [option,setOption]=useState("Pakistan")
+  const onchange=(event)=>{
+    const name=event.target.name;
+    const value=event.target.value;
+    setInputs(values=>({...values,[name]:value}))
+  }
+  
+  const onsubmitHandle=(e)=>{
+    e.preventDefault();
+    alert("Subscribed Successfully")
+    setInputs({})
+    setOption("")
+  }
+
   return (
     <section className='mt-[80px] md:mt-[80px] lg:mt-[120px] xl:mt-[192px] bg-white'>
       <div className='container'>
@@ -17,31 +32,35 @@ const Wait_List = () => {
                 Join our waitlist now to gain exclusive early access to our platform.
               </p>
             </div>
+            <form className='w-full' onSubmit={onsubmitHandle}>
             <div className='flex flex-col gap-8 w-full'>
               <div className='flex md:flex-row flex-col gap-8 w-full'>
-                <input type='text' className='w-full rounded-2xl border-[0.5px] outline-none px-3 py-[10px]' placeholder='Name' />
-                <select id='cars' className='w-full text-[#bbbbbb]  rounded-2xl border-[0.5px] outline-none px-3 py-[10px]' name='cars'>
-                  <option value='volvo'>
-                    Country
+              
+                <input type='text' name="username" value={inputs.username || " "} onChange={onchange} className='w-full rounded-2xl border-[0.5px] outline-none px-3 py-[10px]' placeholder='Name' />
+                <select id='cars' value={option} onChange={(e)=>setOption(e.target.value)} className='w-full text-[#bbbbbb]  rounded-2xl border-[0.5px] outline-none px-3 py-[10px]' name='cars'>
+                  
+                  <option value='Pk' >
+                    Pakistan
                   </option>
-                  <option value='saab'>
-                    Saab 95
+                  <option value='Ch'>
+                    China
                   </option>
-                  <option value='mercedes'>
-                    Mercedes SLK
-                  </option>
-                  <option value='audi'>
-                    Audi TT
+                  <option value='uk'>
+                    Uk
                   </option>
                 </select>
+
               </div>
               <div className='w-full '>
-                <input type='email' className='w-full outline-none rounded-2xl border-[0.5px] px-3 py-[10px]' placeholder='Type email address' />
+                <input type='email' name='email' value={inputs.email || " "} onChange={onchange } className='w-full outline-none rounded-2xl border-[0.5px] px-3 py-[10px]' placeholder='Type email address' />
               </div>
             </div>
-            <button className='px-[32px] py-[14px] bg-[#dd0011] text-white rounded-2xl'>
+            <button type='submit' className='px-[32px] mt-[48px] py-[14px] bg-[#dd0011] text-white rounded-2xl'>
               Subscribe
             </button>
+            </form>
+           
+            
           </div>
         </div>
       </div>
