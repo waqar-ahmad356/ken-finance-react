@@ -14,7 +14,7 @@ const Crypto_Blockchain = () => {
                 <h3 className='text-[28px] font-bold '>Gamified Blockchain Education</h3>
                 <p className='font-lato text-[18px] text-[#212121] leading-6'>Boost your knowledge of cryptocurrency and Blockchain technology with our gaming experience while earning points & badges.</p>
             </div>
-            <div className='xl:px-[177px]'>
+            <div className='xl:px-[177px] mx-auto'>
                 <img src={learning_ui} className='max-w-full h-auto' width="264" height="545" alt='learning'/>
             </div>
         </div>

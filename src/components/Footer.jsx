@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <section className='mt-[80px] md:mt-[80px] lg:mt-[120px] xl:mt-[192px] border-t-[1px] border-[#e4e3e2] bg-white'>
     <div className='container'>
-        <div className='md:pt-[64px] md:pb-[48px] flex flex-wrap flex-col w-full gap-[64px] items-start'>
+        <div className='md:pt-[64px] pt-8 pb-3 md:pb-[48px] flex flex-wrap flex-col w-full gap-6 md:gap-[64px] items-start'>
             <div className='flex justify-between flex-wrap md:flex-nowrap gap-8 items-start'>
                 <div className='flex flex-col items-start h-[186px] lg:gap-[32px] lg:w-[800px] xl:w-[991px] justify-between'>
                     <div className='flex flex-col  items-start gap-2 '>
