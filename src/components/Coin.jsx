@@ -1,14 +1,38 @@
-import React from 'react'
-import bitcoin from '../assets/bitcoin.png';
+import React,{useState,useEffect} from 'react'
+import bitcoin_1 from '../assets/bitcoin-1.png';
+import bitcoin_2 from '../assets/bitcoin-2.png';
+import bitcoin_3 from '../assets/bitcoin-3.png';
+import bitcoin_4 from '../assets/bitcoin-4.png';
+import bitcoin_5 from '../assets/bitcoin-5.png';
 
 const Coin = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const bitcoin_imgs=[bitcoin_1,bitcoin_2,bitcoin_3,bitcoin_4,bitcoin_5]
+
+   // Function to handle image change
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % bitcoin_imgs.length);
+    }, 1500); 
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [bitcoin_imgs.length]);
   return (
     <section className='bg-white pt-[40px] md:pt-[80px] lg:pt-[192px]'>
     <div className='container'>
         <div className='flex flex-col md:flex-row  items-center gap-8 md:gap-[60px] '>
         
-        <div>
-            <img src={bitcoin} className='max-w-full h-auto' width="588" height="531" alt='finance'/>
+        <div className='relative w-[483px] h-[591px] overflow-hidden'>
+        {bitcoin_imgs.map((src, index) => (
+        <img
+          key={index}
+          width="483"
+          src={src}
+          alt={`bitcoin-${index + 1}`}
+          className={`max-w-full absolute top-0 left-0  h-auto object-cover  ${
+            currentIndex === index ? 'animate-fadeInOut' : 'hidden'
+          }`}
+        />
+      ))}
         </div>
         <div className='flex flex-col items-start gap-[40px]'>
             <div className='flex flex-col items-start gap-[27px] '>
