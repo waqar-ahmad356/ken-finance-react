@@ -4,7 +4,7 @@ import apple from '../assets/apple-logo.png';
 import google from '../assets/google-play-logo.png';
 
 const Buy_Sell = () => {
-    const messages=['buy & sell','earn & swap','send & receive'];
+    const messages=['buy & sell','earn & swap','buy & sell'];
     const [index,setIndex]=useState(0);
     const [isVisible, setIsVisible] = useState(true); 
 

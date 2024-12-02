@@ -1,5 +1,8 @@
 import React from 'react'
 import KenaApp from '../assets/kena-app.png';
+import forward_icon from '../assets/forward.png';
+import backward_icon from '../assets/backward.png';
+
 
 const Kena_App = () => {
   return (
@@ -10,8 +13,10 @@ const Kena_App = () => {
             <p className='text-[32px] text-[#db0011] font-semibold'>Step 1</p>
                 <h2 className='md:text-[64px] text-[40px]  text-[#000] font-normal'>Download App</h2>
                 <div className='flex items-center md:gap-6 gap-4 ' >
-                    <span className='rounded-[50%] cursor-pointer flex text-[24px] text-[#F4B0B5] justify-center items-center p-[10px] border-[2px] border-[#F4B0B5] w-[48px] h-[48px]'>&gt;</span>
-                    <span className='rounded-[50%] text-[#dd0011] cursor-pointer text-[24px] flex justify-center items-center p-[10px] border-[2px] border-[#dd0011] w-[48px] h-[48px]'>&lt;</span>
+                
+                    <img src={backward_icon} className='max-w-full h-auto' width="48" height="48" alt='backward'/>
+                    <img src={forward_icon} className='max-w-full h-auto' width="48" height="48" alt='forward'/>
+                    
                 </div>
             </div>
             <div>
