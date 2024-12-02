@@ -21,7 +21,7 @@ const Coin = () => {
     <div className='container'>
         <div className='flex flex-col md:flex-row  items-center gap-8 md:gap-[60px] '>
         
-        <div className='relative w-[483px] h-[591px] overflow-hidden'>
+        <div className='relative w-[320px] h-[350px] sm:w-[483px] sm:h-[591px] overflow-hidden'>
         {bitcoin_imgs.map((src, index) => (
         <img
           key={index}

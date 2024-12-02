@@ -44,7 +44,7 @@ const Security = () => {
             <h3 className='text-[28px] font-bold '>Multi-Factor Authentication (MFA)</h3>
             <p className='text-[18px] font-lato text-[#212121] leading-6'>Transactions are protected by MFA, which includes passcode, biometric, email, and authenticator verification.</p>
         </div>
-        <div className='relative w-[480px] h-[470px] overflow-hidden'>
+        <div className='relative w-[320px] h-[300px] sm:w-[480px] sm:h-[470px] overflow-hidden'>
         {mobile_login_imgs.map((src, index) => (
         <img
           key={index}
@@ -61,7 +61,7 @@ const Security = () => {
         </div>
         {/* security on */}
         <div className='flex flex-col-reverse gap-4 md:gap-[64px] items-center md:flex-row justify-between '>
-        <div className='relative w-[504px] h-[470px] overflow-hidden'>
+        <div className='relative w-[320px] h-[300px]  sm:w-[504px] sm:h-[470px]  overflow-hidden'>
         {security_on_imgs.map((src, index) => (
         <img
           key={index}
