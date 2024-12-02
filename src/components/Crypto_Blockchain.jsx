@@ -16,6 +16,7 @@ const Crypto_Blockchain = () => {
             </div>
             <div className='xl:px-[177px] mx-auto'>
                 <img src={learning_ui} className='max-w-full h-auto' width="264" height="545" alt='learning'/>
+                
             </div>
         </div>
         </div>
